@@ -468,8 +468,6 @@ Furthermore, the confusion matrices for each model are shown below:
 	<img src="Images/Fig8_ConfusionMatrices.png?raw=true" width=85% height=85%>
 </p>
 
-Overall, from the top locations, the average monthly salary for all data jobs categories is higher in **Ciudad de México** (43,559 MXN) and lower in **Nuevo León** (33,366 MXN). 
-
 From the confusion matrices above, it seems that **SVC** and **Random Forests** are the algorithms with the best performance, as they have the largest numbers of True Positives and True Negatives, as well as the lowest numbers of False Positives and False Negatives.
 
 Moreover, in order to communicate the performance of each model for each evaluation metric, a heatmap was built:
