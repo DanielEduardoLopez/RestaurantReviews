@@ -534,5 +534,7 @@ ___
 File | Description 
 --- | --- 
 NLP_RestaurantReviews.ipynb | Notebook with the Python code of the entire project.
+NLP_RestaurantReviews.html | HTML version of the notebook with the Python code of the entire project.
+Requirements.txt | Python requirements file.
+Report.pdf | PDF version of the notebook with the Python code of the entire project.
 Restaurant_Reviews.tsv | TSV file with the dataset.
-Report.pdf | Complete report with the results obtained from the data.
