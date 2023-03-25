@@ -14619,12 +14619,44 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1.-Introduction"><strong>1. Introduction</strong><a class="anchor-link" href="#1.-Introduction">&#182;</a></h3><p><strong>Text data</strong> consists of phrases and sentences composed of words (Müller &amp; Guido, 2016) that comes from a Natural Language, i.e., English, Spanish, Latin, etc. In this sense, <strong>Natural Language Processing (NLP)</strong> is the area of the computer science and artificial intelligence that deals with the processing and analysis of text data (Rogel-Salazar, 2020).</p>
+<hr>
+<h2 id="Table-of-Contents"><strong>Table of Contents</strong><a class="anchor-link" href="#Table-of-Contents">&#182;</a></h2><hr>
+<ol>
+<li><a href="#intro">Introduction</a><br></li>
+<li><a href="#objective">Objective</a><br>  </li>
+<li><a href="#question">Research Question</a><br>  </li>
+<li><a href="#hypothesis">Hypothesis</a><br>  </li>
+<li><a href="#methodology">Abridged Methodology</a><br>  </li>
+<li><a href="results">Results</a><br>  <ul>
+<li><a href="#collection">Data Collection</a><br></li>
+<li><a href="#eda">Data Exploration</a><br>  </li>
+<li><a href="#preparation">Data Preparation</a><br>  </li>
+<li><a href="#modeling">Data Modeling</a><br>  </li>
+<li><a href="#evaluation">Evaluation</a><br>  </li>
+</ul>
+</li>
+<li><a href="#conclusions">Conclusions</a><br></li>
+<li><a href="#references">References</a><br></li>
+</ol>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a class="anchor" id="intro"></a></p>
+<hr>
+<h3 id="1.-Introduction"><strong>1. Introduction</strong><a class="anchor-link" href="#1.-Introduction">&#182;</a></h3><hr>
+<p><strong>Text data</strong> consists of phrases and sentences composed of words (Müller &amp; Guido, 2016) that comes from a Natural Language, i.e., English, Spanish, Latin, etc. In this sense, <strong>Natural Language Processing (NLP)</strong> is the area of the computer science and artificial intelligence that deals with the processing and analysis of text data (Rogel-Salazar, 2020).</p>
 <p>The <strong>bag-of-words model</strong> is simple but effective representation of text data in which each word appearing in each text is counted and used to build a sparse matrix suitable to be used with Machine Learning (ML) techniques (Müller &amp; Guido, 2016).</p>
 <p>Some of the most common classification algorithms in ML are <strong>Logistic Regression, K-Nearest Neighbors, Support Vector Machines, Naive Bayes, Decision Trees, Random Forests, and XGBoost</strong> (Müller &amp; Guido, 2016; Ponteves, &amp; Ermenko, 2021).</p>
 <p>According to Müller &amp; Guido (2016), <strong>random forests</strong> are among the most popular ML techniques as they have a very good predictive power while reducing the overfitting. However, they are said to perform poorly on sparse datasets; being the linear models a more appropriate option (Müller &amp; Guido, 2016).</p>
 <p>In this context, it is desired to select the ML algorithm that is capable to yield the most accurate predictions on the NLP of restaurant reviews based on a bag-of-words model.</p>
-<hr>
 
 </div>
 </div>
@@ -14636,8 +14668,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2.-Goal"><strong>2. Goal</strong><a class="anchor-link" href="#2.-Goal">&#182;</a></h3><p>To select the best machine learning algorithm for accurately classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model.</p>
+<p><a class="anchor" id="objective"></a></p>
 <hr>
+<h3 id="2.-Objective"><strong>2. Objective</strong><a class="anchor-link" href="#2.-Objective">&#182;</a></h3><hr>
+<p>To select the best machine learning algorithm for accurately classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model.</p>
 
 </div>
 </div>
@@ -14649,8 +14683,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.-Research-Question"><strong>3. Research Question</strong><a class="anchor-link" href="#3.-Research-Question">&#182;</a></h3><p>Which machine learning algorithm for classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model is able to yield the highest accuracy?</p>
+<p><a class="anchor" id="question"></a></p>
 <hr>
+<h3 id="3.-Research-Question"><strong>3. Research Question</strong><a class="anchor-link" href="#3.-Research-Question">&#182;</a></h3><hr>
+<p>Which machine learning algorithm for classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model is able to yield the highest accuracy?</p>
 
 </div>
 </div>
@@ -14662,8 +14698,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="4.-Hypothesis"><strong>4. Hypothesis</strong><a class="anchor-link" href="#4.-Hypothesis">&#182;</a></h3><p><strong>Random Forests</strong> is the machine learning algorithm that yields the highest accuracy for classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model.</p>
+<p><a class="anchor" id="hypothesis"></a></p>
 <hr>
+<h3 id="4.-Hypothesis"><strong>4. Hypothesis</strong><a class="anchor-link" href="#4.-Hypothesis">&#182;</a></h3><hr>
+<p><strong>Random Forests</strong> is the machine learning algorithm that yields the highest accuracy for classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model.</p>
 
 </div>
 </div>
@@ -14675,7 +14713,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="5.-Abridged-Methodology"><strong>5. Abridged Methodology</strong><a class="anchor-link" href="#5.-Abridged-Methodology">&#182;</a></h3><p>The methodology of the present study is based on Rollin’s Foundational Methodology for Data Science (Rollins, 2015):</p>
+<p><a class="anchor" id="methodology"></a></p>
+<hr>
+<h3 id="5.-Abridged-Methodology"><strong>5. Abridged Methodology</strong><a class="anchor-link" href="#5.-Abridged-Methodology">&#182;</a></h3><hr>
+<p>The methodology of the present study is based on Rollin’s Foundational Methodology for Data Science (Rollins, 2015):</p>
 <ol>
 <li><strong>Analytical approach</strong>: Building and evaluation of classification models.</li>
 <li><strong>Data requirements</strong>: Reviews of a restaurant and their corresponding labels (0 for negative and 1 for positive).</li>
@@ -14685,7 +14726,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li><strong>Data modeling</strong>: First, a bag-of-words model was created from the text data. Then, the dataset was split in training, validation and testing sets. After that, Logistic Regression, K-Nearest Neighbors, Support Vector Machines, Naive Bayes, Decision Trees, Random Forests, and XGBoost algorithms were used to build the models for classificating the restaurant reviews into positive or negative. The hyperparameters for each model were tunned using GridSearchCV or RandomizedSearchCV. Python 3 and its libraries Numpy, Pandas, and Sklearn were utilized for all the modeling steps.</li>
 <li><strong>Evaluation</strong>: The algorithms predictions were primarily evaluated through the accuracy rate, the area under the ROC curve (AUC ROC), and the root-mean-square error (RMSE). However, other metrics and tools such as confusion matrices, classification reports, AUC ROC plots, precision, negative predictive value (NPV), sensitivity, specificity, and the F1 score were also used.</li>
 </ol>
-<hr>
 
 </div>
 </div>
@@ -14697,7 +14737,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="6.-Results"><strong>6. Results</strong><a class="anchor-link" href="#6.-Results">&#182;</a></h3>
+<p><a class="anchor" id="results"></a></p>
+<hr>
+<h3 id="6.-Results"><strong>6. Results</strong><a class="anchor-link" href="#6.-Results">&#182;</a></h3><hr>
+
 </div>
 </div>
 </div>
@@ -14708,7 +14751,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="6.1-Data-Collection"><strong>6.1 Data Collection</strong><a class="anchor-link" href="#6.1-Data-Collection">&#182;</a></h4><p>As mentioned before, data about restaurant reviews and its corresponding labels was retrieved from <a href="https://www.kaggle.com/datasets/vigneshwarsofficial/reviews">Kaggle</a>.</p>
+<h4 id="6.1-Data-Collection-"><strong>6.1 Data Collection</strong> <a class="anchor" id="collection" /><a class="anchor-link" href="#6.1-Data-Collection-">&#182;</a></h4><p>As mentioned before, data about restaurant reviews and its corresponding labels was retrieved from <a href="https://www.kaggle.com/datasets/vigneshwarsofficial/reviews">Kaggle</a>.</p>
 
 </div>
 </div>
@@ -15040,7 +15083,7 @@ Successfully installed pip-21.2
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="6.2-Data-Exploration"><strong>6.2 Data Exploration</strong><a class="anchor-link" href="#6.2-Data-Exploration">&#182;</a></h4><p>The data was explored to identify its general features and characteristics.</p>
+<h4 id="6.2-Data-Exploration-"><strong>6.2 Data Exploration</strong> <a class="anchor" id="eda" /><a class="anchor-link" href="#6.2-Data-Exploration-">&#182;</a></h4><p>The data was explored to identify its general features and characteristics.</p>
 
 </div>
 </div>
@@ -25571,7 +25614,7 @@ iVBORw0KGgoAAAANSUhEUgAAAtAAAAHgCAYAAACMxVqsAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="6.3-Data-Preparation"><strong>6.3 Data Preparation</strong><a class="anchor-link" href="#6.3-Data-Preparation">&#182;</a></h4><p>The text was cleaned and  prepared for the subsequent modeling.</p>
+<h4 id="6.3-Data-Preparation-"><strong>6.3 Data Preparation</strong> <a class="anchor" id="preparation" /><a class="anchor-link" href="#6.3-Data-Preparation-">&#182;</a></h4><p>The text was cleaned and  prepared for the subsequent modeling.</p>
 
 </div>
 </div>
@@ -25993,7 +26036,7 @@ Name: prepText, dtype: object</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="6.4-Data-Modeling"><strong>6.4 Data Modeling</strong><a class="anchor-link" href="#6.4-Data-Modeling">&#182;</a></h4><p>A bag-of-words model was created in order to train several binary classification algorithms for classificating the restaurant reviews into positive or negative. The hyperparameters for each model were tunned using GridSearchCV or RandomizedSearchCV. Then, the accuracy metric was used to select the best classification model.</p>
+<h4 id="6.4-Data-Modeling-"><strong>6.4 Data Modeling</strong> <a class="anchor" id="modeling" /><a class="anchor-link" href="#6.4-Data-Modeling-">&#182;</a></h4><p>A bag-of-words model was created in order to train several binary classification algorithms for classificating the restaurant reviews into positive or negative. The hyperparameters for each model were tunned using GridSearchCV or RandomizedSearchCV. Then, the accuracy metric was used to select the best classification model.</p>
 
 </div>
 </div>
@@ -26006,7 +26049,7 @@ Name: prepText, dtype: object</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># Creation of the Bag-of-Words Model</span>
+<div class=" highlight hl-python"><pre><span></span><span class="p">]</span><span class="c1"># Creation of the Bag-of-Words Model</span>
 <span class="n">cv</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">max_features</span> <span class="o">=</span> <span class="mi">1500</span><span class="p">)</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;prepText&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -35864,7 +35907,7 @@ The RMSE is: 0.53033
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="6.5-Evaluation"><strong>6.5 Evaluation</strong><a class="anchor-link" href="#6.5-Evaluation">&#182;</a></h4><p>The diferent fitted models were evaluated by using the testing set and primarily the following metrics:</p>
+<h4 id="6.5-Evaluation-"><strong>6.5 Evaluation</strong> <a class="anchor" id="evaluation" /><a class="anchor-link" href="#6.5-Evaluation-">&#182;</a></h4><p>The diferent fitted models were evaluated by using the testing set and primarily the following metrics:</p>
 <ul>
 <li>Accuracy, </li>
 <li>AUC ROC, and</li>
@@ -63002,23 +63045,13 @@ z
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a class="anchor" id="conclusions"></a></p>
 <hr>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="7.-Conclusions"><strong>7. Conclusions</strong><a class="anchor-link" href="#7.-Conclusions">&#182;</a></h3><p>According to the combination of parameters tested, the <strong>best model</strong> for <strong>classifying the reviews of a restaurant into positive or negative</strong> through Natural Language Processing based on a bag-of-words model was the <strong>Random Forest Classifier</strong>, with an accuracy, AUC ROC, and RMSE of 0.75, 0.76, and 0.50, respectively.</p>
+<h3 id="7.-Conclusions"><strong>7. Conclusions</strong><a class="anchor-link" href="#7.-Conclusions">&#182;</a></h3><hr>
+<p>According to the combination of parameters tested, the <strong>best model</strong> for <strong>classifying the reviews of a restaurant into positive or negative</strong> through Natural Language Processing based on a bag-of-words model was the <strong>Random Forest Classifier</strong>, with an accuracy, AUC ROC, and RMSE of 0.75, 0.76, and 0.50, respectively.</p>
 <p>It is notable that this finding was in a contrary direction from what it is stated in the literature. This may suggest that either the Random Forest algorithms have been improved in the last couple of years or that the parameters used in the other algorithms were not adequate for the present classification task.</p>
 <p>On the other hand, the second and third best models were <strong>SVC</strong> and <strong>Logistic Regression</strong>, according with the accuracy, AUC ROC, and RMSE metrics. This raises an apparent contradiction as the SVC model with the best performance used the radial basis function, which suggests that the classification problem is not linearly separable.</p>
 <p>In this context, as future research perspectives, further hyperparameter tunning is suggested on the Random Forest Classifier, SVC, and Logistic Regression algorithms, in order to find out whether the classification problem is linearly separable or not, as well as to reach a greater accuracy and a lower error.</p>
-<hr>
 
 </div>
 </div>
@@ -63030,7 +63063,10 @@ z
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="8.-References"><strong>8. References</strong><a class="anchor-link" href="#8.-References">&#182;</a></h3><ul>
+<p><a class="anchor" id="references"></a></p>
+<hr>
+<h3 id="8.-References"><strong>8. References</strong><a class="anchor-link" href="#8.-References">&#182;</a></h3><hr>
+<ul>
 <li><strong>Müller, A. C. &amp; Guido, S. (2016)</strong>. <em>Introduction to Machine Learning with Python: A Guide for Data Scientists</em>. O'Reilly Media. </li>
 <li><strong>Ponteves, H. &amp; Ermenko, K. (2021).</strong> <em>Machine Learning de la A a la Z</em>. <a href="https://joanby.github.io/bookdown-mlaz/">https://joanby.github.io/bookdown-mlaz/</a></li>
 <li><strong>Rogel-Salazar, J. (2020)</strong>. <em>Advanced Data Science and Analytics with Python</em>. Chapman &amp; Hall/CRC.</li>
