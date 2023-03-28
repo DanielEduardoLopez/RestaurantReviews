@@ -14,6 +14,26 @@
 
 
 ____
+### **Contents**
+
+1. [Introduction](#intro)<br>
+2. [General Objective](#objective)<br>
+3. [Research Question](#question)<br>
+4. [Hypothesis](#hypothesis)<br>
+5. [Abridged Methodology](#methodology)<br>
+6. [Main Results](#results)<br>
+	6.1 [Data Collection](#collection)<br>
+	6.2 [Data Exploration](#eda)<br>
+	6.3 [Data Preparation](#preparation)<br>
+	6.4 [Data Modeling](#modeling)<br>
+	6.5 [Evaluation](#evaluation)<br>
+7. [Conclusions](#conclusions)<br>
+8. [Bibliography](#bibliography)<br>
+9. [Description of Files in Repository](#files)<br>
+
+
+____
+<a class="anchor" id="intro"></a>
 ### **1. Introduction**
 **Text data** consists of phrases and sentences composed of words (Müller & Guido, 2016) that comes from a Natural Language, i.e., English, Spanish, Latin, etc. In this sense, **Natural Language Processing (NLP)** is the area of the computer science and artificial intelligence that deals with the processing and analysis of text data (Rogel-Salazar, 2020). 
 
@@ -26,15 +46,19 @@ According to Müller & Guido (2016), **random forests** are among the most popul
 In this context, it is desired to select the ML algorithm that is capable to yield the most accurate predictions on the NLP of restaurant reviews based on a bag-of-words model. 
 
 ____
+<a class="anchor" id="objective"></a>
 ### **2. General Objective**
 To select the best machine learning algorithm for accurately classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model. 
 ____
+<a class="anchor" id="question"></a>
 ### **3. Research Question**
 Which machine learning algorithm for classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model is able to yield the highest accuracy?
 ____
+<a class="anchor" id="hypothesis"></a>
 ### **4. Hypothesis**
 **Random Forests** is the machine learning algorithm that yields the highest accuracy for classifying restaurant reviews into positive or negative through Natural Language Processing based on a bag-of-words model.
 ____
+<a class="anchor" id="methodology"></a>
 ### **5. Abridged Methodology**
 The methodology of the present study is based on Rollin’s Foundational Methodology for Data Science (Rollins, 2015):
 
@@ -47,11 +71,14 @@ The methodology of the present study is based on Rollin’s Foundational Methodo
 6. **Evaluation**: The algorithms predictions were primarily evaluated through the accuracy rate, the area under the ROC curve (AUC ROC), and the root-mean-square error (RMSE). However, other metrics and tools such as confusion matrices, classification reports, AUC ROC plots, precision, negative predictive value (NPV), sensitivity, specificity, and the F1 score were also used.
 
 ___
+<a class="anchor" id="results"></a>
 ### **6. Main Results**
 
+<a class="anchor" id="collection"></a>
 #### **6.1 Data Collection**
 As mentioned before, data about restaurant reviews and its corresponding labels was retrieved from <a href="https://www.kaggle.com/datasets/vigneshwarsofficial/reviews">Kaggle</a>.
 
+<a class="anchor" id="eda"></a>
 #### **6.2 Data Exploration**
 The data was explored to identify its general features and characteristics. In particular, dataset consisted of 1000 annotated reviews.
 
@@ -101,10 +128,11 @@ The latter insigth can also be conveyed through a Word Cloud:
 	<img src="Images/Fig7_WordCloud.png?raw=true" width=60% height=60%>
 </p>
 
-
+<a class="anchor" id="preparation"></a>
 #### **6.3 Data Preparation**
 The text was cleaned and  prepared for the subsequent modeling. To do so, abbreviations were converted to text. Then, only text characters were kept by using Regular Expressions. After that, text was transformed into lower case and split into words using lists. The words were later stemmed and the stop words were removed. Finally, the words were rejoined into a text string.
 
+<a class="anchor" id="modeling"></a>
 #### **6.4 Data Modeling**
 A bag-of-words model was created in order to train several binary classification algorithms for classificating the restaurant reviews into positive or negative. The hyperparameters for each model were tunned using GridSearchCV or RandomizedSearchCV. The validation set was used to estimate the preliminary evaluation metrics for each model.
 
@@ -444,6 +472,7 @@ The area under the ROC curve is: 0.71600
 The RMSE is: 0.53033
 ```
 
+<a class="anchor" id="evaluation"></a>
 #### **6.5 Evaluation**
 The diferent fitted models were evaluated by using the testing set and primarily the following metrics: 
 * Accuracy, 
@@ -515,6 +544,7 @@ Finally, according the ROC curves, the algorithm that yielded the best results w
 Please refer to the **[Report](https://github.com/DanielEduardoLopez/RestaurantReviews/blob/main/Report.pdf)** for the full results and discussion.
 
 ___
+<a class="anchor" id="conclusions"></a>
 ### **7. Conclusions**
 According to the combination of parameters tested, the **best model** for **classifying the reviews of a restaurant into positive or negative** through Natural Language Processing based on a bag-of-words model was the **Random Forest Classifier**, with an accuracy, AUC ROC, and RMSE of 0.75, 0.76, and 0.50, respectively. 
 
@@ -525,6 +555,7 @@ On the other hand, the second and third best models were **SVC** and **Logistic 
 In this context, as future research perspectives, further hyperparameter tunning is suggested on the Random Forest Classifier, SVC, and Logistic Regression algorithms, in order to find out whether the classification problem is linearly separable or not, as well as to reach a greater accuracy and a lower error. 
 
 ___
+<a class="anchor" id="bibliography"></a>
 ### **8. Bibliography**
 - **Müller, A. C. & Guido, S. (2016)**. *Introduction to Machine Learning with Python: A Guide for Data Scientists*. O'Reilly Media. 
 - **Ponteves, H. & Ermenko, K. (2021).** *Machine Learning de la A a la Z*. https://joanby.github.io/bookdown-mlaz/
@@ -532,6 +563,7 @@ ___
 - **Rollins, J. B. (2015)**. *Metodología Fundamental para la Ciencia de Datos. Somers: IBM Corporation.* https://www.ibm.com/downloads/cas/WKK9DX51
 
 ___
+<a class="anchor" id="files"></a>
 ### **9. Description of Files in Repository**
 File | Description 
 --- | --- 
