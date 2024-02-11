@@ -6,11 +6,9 @@
 # A Classification Model of Restaurant Reviews through Natural Language Processing
 #### By Daniel Eduardo López
 
-**29/12/2022**
+<font size="-1"><a href="https://www.linkedin.com/in/daniel-eduardo-lopez">LinkedIn</a> | <a href="https://github.com/DanielEduardoLopez">GitHub </a></font>
 
-**[LinkedIn](https://www.linkedin.com/in/daniel-eduardo-lopez)**
-
-**[Github](https://github.com/DanielEduardoLopez)**
+**29 December 2022**
 
 
 ____
